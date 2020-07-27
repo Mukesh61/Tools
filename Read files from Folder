@@ -1,0 +1,17 @@
+"""
+Below piece of code shows, how to get all the files name and create same files with appending "out" into another folder.
+Basic use of this piece of code to get input data from a folder rather than files. 
+Pre requisite:
+1. Input folder should be there 
+2. Output folder should be present where we will create our output files.
+"""
+import os
+files = os.listdir('Input/')
+
+for file in files:
+    print(file)
+    out_file, ext = file.split('.')
+    out_file_rename = "Output/"+ out_file + "_out." + ext
+    print(out_file)
+    w_file = open(out_file_rename, 'w')
+    w_file.close()
