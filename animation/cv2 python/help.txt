@@ -1,0 +1,3 @@
+Rules 1. while creating video from image we have to make sure that all the image and video has same frame size. width and height. 
+         once we read photo = cv2.imread then we can check height, width, layers = photo.shape. use same height and width in video frames
+        
